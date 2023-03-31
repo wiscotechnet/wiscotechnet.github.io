@@ -42,3 +42,30 @@ create a new `A` record using `route53`, make sure to make it an `alias` and the
 ## testing
 
 once everything has propigated you should be able to access the repo using either <https://wiscotechnet.github.io/> or <https://www.wiscotech.net/>.
+
+## notes
+
+it looks like <https://wiscotech.net> also resolves to the repo. not sure why, but it's probably a browser feature.
+
+using nslookup shows the following:
+
+```shell
+nslookup www.wiscotech.net
+Server:  cdns01.comcast.net
+Address:  2001:558:feed::1
+
+Non-authoritative answer:
+Name:    www.wiscotech.net
+Addresses:13.35.116.16
+          13.35.116.11
+          13.35.116.6
+          13.35.116.123
+```
+
+```shell
+nslookup wiscotech.net
+Server:  cdns01.comcast.net
+Address:  2001:558:feed::1
+
+Name:    wiscotech.net
+```
