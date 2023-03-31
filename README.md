@@ -31,7 +31,7 @@ create a new `cloudfront` distribution, and keep everything at the defaults exce
 * alternate domain name:`www.wiscotech.net`
 * ssl certificate:`select previously created certifcate from drop-down menu`
 * viewer protocol policy:`redirect http to https`
-* cache policy:`CachingOptimized`
+* cache policy:`CachingDisabled`
 * description:`serving wiscotechnet.github.io via www.wiscotech.net`
 
 ### create route53 record
